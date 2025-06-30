@@ -9,7 +9,7 @@ The implementation is organized into the following stages:
 * **Library Imports:** Load Pandas, NumPy, Matplotlib and scikit-learn for data handling, analysis and visualization.
 * **Data Loading & Exploratory Analysis:** Ingest the CSV dataset; compute descriptive statistics; generate histograms and a correlation heatmap to inspect feature distributions and relationships .
 * **Data Preprocessing:** Apply Min–Max normalization to all binary attributes and the leg-count feature (originally {0,2,4,5,6,8}), ensuring uniform scale for Euclidean-distance learning .
-* **SOM Implementation & Hyperparameter Tuning:** Define weight initialization, Best-Matching Unit selection, and Gaussian neighborhood function. Sweep key hyperparameters—map size (15×15), initial learning rate (α₀ = 0.2), initial neighborhood radius (σ₀ = 12) and training length (300 000 epochs)—to identify the optimal configuration .
+* **SOM Implementation & Hyperparameter Tuning:** Define weight initialization, Best-Matching Unit selection, and Gaussian neighborhood function. Sweep key hyperparameters map size (15×15), initial learning rate (α₀ = 0.2), initial neighborhood radius (σ₀ = 12) and training length (300 000 epochs) to identify the optimal configuration .
 * **Training & Monitoring:** Train the SOM over the specified epochs, logging quantization error and topographic error at regular intervals to evaluate convergence and topological fidelity .
 * **Post-Training Analysis:** Cluster the 225 neuron weight vectors via K-Means (k = 20) to delineate coherent regions. Visualize the resulting cluster map, U-Matrix, activation frequency heatmap and per-cluster sample assignments for both training and held-out specimens .
 
