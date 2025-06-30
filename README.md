@@ -19,17 +19,11 @@ The implementation is organized into the following stages:
 * **Dependencies:** `pandas`, `numpy`, `matplotlib`, `scikit-learn`.
 * **Execution:**
 
-  1. Clone the repository and install dependencies via `pip install -r requirements.txt`.
-  2. Launch `SOM_zoo.ipynb` and run all cells sequentially, **or** execute:
+  1. Clone the repository and install dependencies via `pip install -r requirements.txt` or just download the Notebook `SelfOrganizingMap.ipynb.
+  2. Upload the datasets.
+  3. Launch `SelfOrganizingMap.ipynb` and run all cells sequentially.
 
-     ```bash
-     python train_som.py \
-       --data_path data/zoo.csv \
-       --map_size 15 15 \
-       --learning_rate 0.2 \
-       --radius 12 \
-       --epochs 300000
-     ```
+Feel free to change the hyperparameters in order to find the best SOM!
 
 ## 4. Test Specimen Assignment (Extension)
    To project new animal records onto the trained SOM, you can add more on the `data/zoo_animals_test.csv`.
