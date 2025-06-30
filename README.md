@@ -32,23 +32,11 @@ The implementation is organized into the following stages:
      ```
 
 ## 4. Test Specimen Assignment (Extension)
-   To project new animal records onto the trained SOM:
+   To project new animal records onto the trained SOM, you can add more on the `data/zoo_animals_test.csv`.
 
-## 5. Add your specimens to `data/new_animals.csv` (same 17-column format).
+## 5. Dataset Availability
 
-## 6. Run
-
-   ```bash
-   python assign_new.py \
-     --model_weights weights.npy \
-     --input data/new_animals.csv
-   ```
-
-   The script outputs each sample’s Best-Matching Unit coordinates and associated cluster label.
-
-## 7. Dataset Availability
-
-* **Zoo Animal Dataset:** Provided as `data/zoo.csv` (98 specimens × 17 features).
-* **Held-Out Test Set:** Included in `data/zoo_test.csv` (25 specimens) for out-of-sample validation.
+* **Train Set:** Provided as `data/zoo_animals_train.csv` (98 specimens × 17 features).
+* **Test Set:** Included in `data/zoo_animals_test.csv` (3 specimens) for out-of-sample validation.
 
 Feel free to include this description in your GitHub README to succinctly convey the goals, structure and usage of your SOM project!
