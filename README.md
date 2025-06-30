@@ -19,7 +19,7 @@ The implementation is organized into the following stages:
 * **Dependencies:** `pandas`, `numpy`, `matplotlib`, `scikit-learn`.
 * **Execution:**
 
-  1. Clone the repository and install dependencies via `pip install -r requirements.txt` or just download the Notebook `SelfOrganizingMap.ipynb.
+  1. Clone the repository and install dependencies via `pip install -r requirements.txt` or just download the Notebook `SelfOrganizingMap.ipynb`.
   2. Upload the datasets.
   3. Launch `SelfOrganizingMap.ipynb` and run all cells sequentially.
 
